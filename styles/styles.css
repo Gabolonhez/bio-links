@@ -1,27 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --main-font: Poppins, sans-serif;
+    --main-color: #ffffff;
+}
+
 * {
     content: "";
-    background: linear-gradient(to bottom, #000, #06061b);
+    background: radial-gradient(circle, rgb(0, 0, 0) 13%, rgb(15, 15, 48) 50%, rgb(18, 18, 49) 100%);
     background-repeat: no-repeat;
     width: 100%;
-    height: 100%;
+    height: 287.5px;
 }  
 
-.profile-photo {
+.profile__photo {
     display: flex;
     flex-direction: column;
     justify-self: center;
-    width: 200px;
-    height: 200px;
-    margin-top: 10rem;
+    width: 150px;
+    height: 150px;
+    margin-top: 8rem;
     border-radius: 50%;
     filter: drop-shadow(15px 15px 15px #000000);
+}
+
+.profile__name {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.profile__name h1 {
+    align-content: center;
+    font-family: var(--main-font);
+    font-size: 30px;
+    color: var(--main-color);
+}
+
+.profile__name p {
+    margin-bottom: 6rem;
+    font-size: 20px;
 }
 
 .images__links {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 8rem;
     gap: 5rem;
 }
 
@@ -32,6 +56,21 @@
     height: 50px;
 }
 
+.images__links a:hover {
+    width: 70px;
+    transition: ease-in-out 0.4s;
+}
+
 tiktok-image {
     color: white;
+}
+
+/* Mobile  */
+@media (max-width: 768px) {
+    * {
+        background: radial-gradient(circle, rgb(0, 0, 0) 13%, rgb(0, 0, 0) 50%, rgb(0, 0, 0) 100%);
+    }
+    .images__links {
+        gap: 2rem;
+    }
 }
