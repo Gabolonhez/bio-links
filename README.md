@@ -2,7 +2,7 @@
 
 ## 📑 Descrição
 
-Bio links é um projeto que permite inserir os links úteis de redes sociais, entre outros.
+Bio links é um projeto que permite inserir os links úteis de suas redes sociais e de outros sites, aplicativos relevantes.
 
 ## 🎯 Funcionalidades
 
