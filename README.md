@@ -1,4 +1,6 @@
 # Bio Links
+![image](https://github.com/user-attachments/assets/2ceb27a9-57e9-4ccf-bcf9-50301e77d368)
+
 
 ## 📑 Descrição
 
