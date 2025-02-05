@@ -12,9 +12,8 @@ Bio links é um projeto que permite inserir os links úteis de suas redes sociai
 
 ## 💻 Tecnologias 
 
-`HTML`
-
-`CSS`
+- `HTML`
+- `CSS`
 
 <!-- ## 🛠️ Etapas realizadas
 
