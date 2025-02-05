@@ -8,7 +8,7 @@ Bio links é um projeto que permite inserir os links úteis de suas redes sociai
 
 ## 🎯 Funcionalidades
 
-- [x]: Permite os usuários acessarem o seu perfis de redes sociais.
+- [x]: Permite os usuários acessarem link de perfis de redes sociais.
 
 ## 💻 Tecnologias 
 
