@@ -12,9 +12,9 @@ Bio links é um projeto que permite inserir os links úteis de suas redes sociai
 
 ## 💻 Tecnologias 
 
-`HTML`: Linguagem utilizada para desenvolver a as páginas do aplicativo.
+`HTML`
 
-`CSS`: Utilizado para estilização da interface do aplicativo.
+`CSS`
 
 <!-- ## 🛠️ Etapas realizadas
 
