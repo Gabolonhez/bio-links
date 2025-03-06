@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
 
 :root {
-    --main-font: Poppins, sans-serif;
+    --main-font: 'Poppins', sans-serif;
+    --second-font: 'Quicksand', cursive;
+
     --main-color: #ffffff;
 }
 
@@ -11,6 +14,7 @@
     background-repeat: no-repeat;
     width: 100%;
     height: 287.5px;
+    
 }  
 
 .profile__photo {
@@ -22,31 +26,35 @@
     margin-top: 8rem;
     border-radius: 50%;
     filter: drop-shadow(15px 15px 15px #000000);
+    box-shadow: 2px 10px 10px rgb(29, 23, 23);
 }
 
 .profile__name {
     display: flex;
     flex-direction: column;
     text-align: center;
+    margin-top: 20px;
 }
 
 .profile__name h1 {
     align-content: center;
-    font-family: var(--main-font);
-    font-size: 30px;
+    font-family: var(--second-font);
+    font-weight: bold;
+    font-size: 2rem;
     color: var(--main-color);
 }
 
 .profile__name p {
     margin-bottom: 6rem;
     font-size: 20px;
+
 }
 
 .images__links {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 5rem;
+    gap: 4.5rem;
 }
 
 .images__links a {
@@ -54,15 +62,12 @@
     flex-direction: column;
     width: 50px;
     height: 50px;
+    animation: wiggle 3s linear infinite;
 }
 
 .images__links a:hover {
     width: 70px;
-    transition: ease-in-out 0.4s;
-}
-
-tiktok-image {
-    color: white;
+    transition: ease 1s;
 }
 
 /* Mobile  */
@@ -74,3 +79,78 @@ tiktok-image {
         gap: 2rem;
     }
 }
+
+
+/* Animations */
+
+@keyframes rotating {
+    0% {
+        transform: rotateY(30deg) rotate(-25deg) translateZ(100px);
+    }
+    25% {
+        transform: rotateY(-30deg) translateZ(100px);
+    }
+    50% {
+        transform: rotateX(-50deg) translateZ(-100px);
+    }
+    75% {
+        transform: rotateX(-50deg) translateZ(-100px);
+    }
+    100% {
+        transform: rotateX(20deg) translateZ(0);
+    }
+}
+
+/* animation: example 5s infinite alternate;
+  filter: blur(100px); */
+
+@keyframes wiggle {
+    0%, 10% {
+      transform: rotate(0);
+    }
+    15% {
+      transform: rotate(-15deg);
+    }
+    20% {
+      transform: rotate(10deg);
+    }
+    25% {
+      transform: rotate(-10deg);
+    }
+    30% {
+      transform: rotate(10deg);
+    }
+    35% {
+      transform: rotate(-10deg);
+    }
+    40%, 100% {
+      transform: rotate(0);
+    }
+  }
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% { 
+      background-position: 0% 50%;
+    }
+
+}
+
+/* animation: gradient 5s ease infinite alternate; */
+
+@keyframes loader {
+    to {
+      transform: scale(1.8);
+    }
+  }
+
+    animation: loader .8s ease-in-out alternate infinite;
+    animation: loader .8s ease-in-out alternate .3s infinite;
+ 
+    animation: loader .8s ease-in-out alternate .6s infinite;
+ 
